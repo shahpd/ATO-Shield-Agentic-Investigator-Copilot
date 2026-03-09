@@ -14,18 +14,9 @@ This prototype demonstrates how an **agentic reasoning engine** can synthesize f
 
 Today, when an ATO alert is triggered, a fraud analyst must manually:
 
-* 
-**Context-Switch:** Access 4 to 6 internal systems to pull device, login, IP, and transaction history.
-
-
-* 
-**Synthesize Signals:** Mentally connect patterns that appear benign individually but are suspicious in combination.
-
-
-* 
-**Draft Narratives:** Manually write case justifications for audit and compliance purposes.
-
-
+* **Context-Switch:** Access 4 to 6 internal systems to pull device, login, IP, and transaction history.
+* **Synthesize Signals:** Mentally connect patterns that appear benign individually but are suspicious in combination.
+* **Draft Narratives:** Manually write case justifications for audit and compliance purposes.
 
 The goal of this project is to move from manual synthesis toward an **automated, evidence-based investigation workflow**.
 
@@ -33,66 +24,27 @@ The goal of this project is to move from manual synthesis toward an **automated,
 
 The agent follows a structured sequence to ensure a complete evidence trail for every decision:
 
-1. 
-**Data Collection:** Automated signal enrichment of device, geo, and behavioral telemetry.
-
-
-2. 
-**User Profiling:** Establishing behavioral baselines from historical account data.
-
-
-3. 
-**Contextual Analysis:** Examining current session details against known account history.
-
-
-4. 
-**Pattern Identification:** Detecting combinatorial risks (e.g., "Impossible Travel" paired with recent credential changes).
-
-
-5. 
-**Risk Scoring:** Calculating a probability-weighted risk score.
-
-
-6. 
-**Explainable Verdict:** Generating a structured, audit-ready reasoning chain.
-
-
+1. **Data Collection:** Automated signal enrichment of device, geo, and behavioral telemetry.
+2. **User Profiling:** Establishing behavioral baselines from historical account data.
+3. **Contextual Analysis:** Examining current session details against known account history.
+4. **Pattern Identification:** Detecting combinatorial risks (e.g., "Impossible Travel" paired with recent credential changes).
+5. **Risk Scoring:** Calculating a probability-weighted risk score.
+6. **Explainable Verdict:** Generating a structured, audit-ready reasoning chain.
 
 ## Technical Architecture
 
-* 
-**Orchestration:** n8n 
-
-
-* 
-**Reasoning Engine:** OpenAI / LLM-based pattern synthesis 
-
-
-* 
-**Frontend:** v0.dev (Designed for a Human-in-the-loop analyst experience) 
-
-
-* 
-**Data Layer:** Structured behavioral baselines (Currently mocked for prototype) 
-
-
+* **Orchestration:** n8n 
+* **Reasoning Engine:** OpenAI / LLM-based pattern synthesis 
+* **Frontend:** v0.dev (Designed for a Human-in-the-loop analyst experience) 
+* **Data Layer:** Structured behavioral baselines (Currently mocked for prototype) 
 
 ## Product Goals (Target Metrics)
 
 The "North Star" for this platform is **Time-to-Determination (TTD)**.
 
-* 
-**Efficiency:** Target a significant reduction in median time from case submission to analyst action.
-
-
-* 
-**Accuracy:** Maintain high True Positive Rates while minimizing customer friction from false positives.
-
-
-* 
-**Compliance:** Provide 100% audit trail completeness with step-by-step reasoning logs.
-
-
+* **Efficiency:** Target a significant reduction in median time from case submission to analyst action.
+* **Accuracy:** Maintain high True Positive Rates while minimizing customer friction from false positives.
+* **Compliance:** Provide 100% audit trail completeness with step-by-step reasoning logs.
 
 ## Disclaimer
 
